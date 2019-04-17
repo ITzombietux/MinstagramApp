@@ -1,0 +1,6 @@
+framework module Pods_Minstagram {
+  umbrella header "Pods-Minstagram-umbrella.h"
+
+  export *
+  module * { export * }
+}

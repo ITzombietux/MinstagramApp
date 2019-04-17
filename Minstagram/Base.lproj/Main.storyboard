@@ -1,0 +1,1587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c4X-vN-RJm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="ujg-OJ-uTd">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeView" id="c4X-vN-RJm" userLabel="Welcome View Controller" customClass="WelcomeViewController" customModule="Minstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pm6-Dr-7Mq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="XhD-3p-vai" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bM2-Ds-VPm" userLabel="MaskView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdZ-TZ-7EF" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                <rect key="frame" x="24" y="32" width="89" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MdZ-AR-wOn"/>
+                                    <constraint firstAttribute="width" constant="89" id="i10-El-kUm"/>
+                                </constraints>
+                                <state key="normal" title="minstagram" image="minstagram">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb4-MV-Vfz" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="343" id="hd3-sy-frm"/>
+                                    <constraint firstAttribute="height" constant="50" id="qJM-zP-FKY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                <state key="normal" title="CREATE ACCOUNT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ahu-et-QBf" kind="presentation" id="dZC-Vm-azo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-bQ-brQ" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                <rect key="frame" x="16" y="346" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ks2-Hr-1UH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="SIGN IN WITH EMAIL" image="email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                        <real key="value" value="-10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="egJ-Rz-ft8" kind="presentation" id="cDw-Ll-81W"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="p2o-0x-MSt">
+                                <rect key="frame" x="16" y="426" width="343" height="107"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r12-MH-aLP" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="m95-yv-Lmo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="SIGN IN WITH FACEBOOK" image="facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                                <real key="value" value="-10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="facebookLoginWithSender:" destination="c4X-vN-RJm" eventType="touchUpInside" id="Yyd-u6-sk6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwt-vQ-6nY" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="57" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.82745098039215681" green="0.28235294117647058" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rCf-qS-nNw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="SIGN IN WITH GOOGLE" image="google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageLeftPadding">
+                                                <real key="value" value="-10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="googleLoginWithSender:" destination="c4X-vN-RJm" eventType="touchUpInside" id="vVs-Yg-tde"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Northern Lights." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-7q-pqd">
+                                <rect key="frame" x="25" y="80" width="302" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="eyO-ld-dKI"/>
+                                    <constraint firstAttribute="height" constant="100" id="r8C-vE-ZZ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XdZ-TZ-7EF" firstAttribute="leading" secondItem="ywr-Q1-zX4" secondAttribute="leading" constant="24" id="2vc-wb-Pec"/>
+                            <constraint firstItem="ywr-Q1-zX4" firstAttribute="trailing" secondItem="bM2-Ds-VPm" secondAttribute="trailing" id="3K9-e9-zVl"/>
+                            <constraint firstAttribute="bottom" secondItem="XhD-3p-vai" secondAttribute="bottom" id="4Dq-cU-aHH"/>
+                            <constraint firstItem="XhD-3p-vai" firstAttribute="leading" secondItem="ywr-Q1-zX4" secondAttribute="leading" id="9UU-FP-f13"/>
+                            <constraint firstItem="XhD-3p-vai" firstAttribute="top" secondItem="pm6-Dr-7Mq" secondAttribute="top" id="BnV-tr-d1p"/>
+                            <constraint firstItem="EOx-bQ-brQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="j7Q-7q-pqd" secondAttribute="bottom" constant="20" id="Ewr-26-zwo"/>
+                            <constraint firstItem="p2o-0x-MSt" firstAttribute="top" secondItem="EOx-bQ-brQ" secondAttribute="bottom" constant="30" id="LmY-FC-Z8y"/>
+                            <constraint firstItem="hb4-MV-Vfz" firstAttribute="leading" secondItem="pm6-Dr-7Mq" secondAttribute="leadingMargin" id="NSz-xg-QRK"/>
+                            <constraint firstItem="j7Q-7q-pqd" firstAttribute="top" secondItem="XdZ-TZ-7EF" secondAttribute="bottom" constant="-2" id="Pgo-Ju-53g"/>
+                            <constraint firstItem="hb4-MV-Vfz" firstAttribute="trailing" secondItem="pm6-Dr-7Mq" secondAttribute="trailingMargin" id="UEn-he-Ev2"/>
+                            <constraint firstItem="hb4-MV-Vfz" firstAttribute="top" secondItem="p2o-0x-MSt" secondAttribute="bottom" priority="750" constant="64" id="aij-1u-Wtc"/>
+                            <constraint firstItem="ywr-Q1-zX4" firstAttribute="trailing" secondItem="XhD-3p-vai" secondAttribute="trailing" id="bCB-3r-GGW"/>
+                            <constraint firstItem="j7Q-7q-pqd" firstAttribute="leading" secondItem="pm6-Dr-7Mq" secondAttribute="leadingMargin" constant="9" id="cOV-aL-LWh"/>
+                            <constraint firstItem="EOx-bQ-brQ" firstAttribute="trailing" secondItem="pm6-Dr-7Mq" secondAttribute="trailingMargin" id="csJ-BP-tVL"/>
+                            <constraint firstAttribute="bottom" secondItem="bM2-Ds-VPm" secondAttribute="bottom" id="dEO-gn-m7X"/>
+                            <constraint firstItem="p2o-0x-MSt" firstAttribute="leading" secondItem="pm6-Dr-7Mq" secondAttribute="leadingMargin" id="dGq-h2-lhN"/>
+                            <constraint firstItem="XdZ-TZ-7EF" firstAttribute="top" secondItem="ywr-Q1-zX4" secondAttribute="top" constant="12" id="g0h-pU-kS1"/>
+                            <constraint firstItem="bM2-Ds-VPm" firstAttribute="top" secondItem="pm6-Dr-7Mq" secondAttribute="top" id="hmY-Tw-xFn"/>
+                            <constraint firstItem="EOx-bQ-brQ" firstAttribute="leading" secondItem="pm6-Dr-7Mq" secondAttribute="leadingMargin" id="j5H-ah-gjc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p2o-0x-MSt" secondAttribute="trailing" id="oW2-y5-gpD"/>
+                            <constraint firstItem="bM2-Ds-VPm" firstAttribute="leading" secondItem="ywr-Q1-zX4" secondAttribute="leading" id="p33-Ai-lkY"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j7Q-7q-pqd" secondAttribute="trailingMargin" id="upX-Es-fJS"/>
+                            <constraint firstItem="ywr-Q1-zX4" firstAttribute="bottom" secondItem="hb4-MV-Vfz" secondAttribute="bottom" constant="20" id="yJv-B9-xSY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ywr-Q1-zX4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KKo-Dy-6P4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="777-7P-FTB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.1999999999998" y="112.89355322338831"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="JDg-ya-dzL">
+            <objects>
+                <viewController id="DbA-Ew-C6i" customClass="LoginViewController" customModule="Minstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FuI-aJ-dJk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-O2-277" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-57-qAI" userLabel="MaskView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-K5-WEM">
+                                <rect key="frame" x="26" y="104" width="323" height="239"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Kb1-kA-v4H">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="173"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3cD-bA-mfH">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="93"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OPf-Cz-Grc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="35"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-3u-9ho">
+                                                                <rect key="frame" x="0.0" y="0.0" width="323" height="24"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swH-IN-Vnr">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <state key="normal" image="email"/>
+                                                                    </button>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER YOUR EMAIL" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="m8k-2y-DW1">
+                                                                        <rect key="frame" x="34" y="0.0" width="289" height="24"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXj-gf-Pvq" userLabel="Divider">
+                                                                <rect key="frame" x="0.0" y="34" width="323" height="1"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="3sP-v4-2bK"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="cdb-3u-9ho" secondAttribute="trailing" id="Xz8-tq-4uO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kXj-gf-Pvq" secondAttribute="trailing" id="aet-S6-QdZ"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="az6-Fj-9Fw">
+                                                        <rect key="frame" x="0.0" y="55" width="323" height="38"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="KSs-oe-Bck">
+                                                                <rect key="frame" x="0.0" y="0.0" width="323" height="27"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hs-71-v4f">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="27"/>
+                                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <state key="normal" image="lock"/>
+                                                                    </button>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER YOUR PASSWORD" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ttx-xB-VnP">
+                                                                        <rect key="frame" x="34" y="0.0" width="289" height="27"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                                <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-16-bgu" userLabel="Divider">
+                                                                <rect key="frame" x="0.0" y="37" width="323" height="1"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="evg-8g-svA"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="KSs-oe-Bck" secondAttribute="trailing" id="Jzl-1U-bZU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QgR-16-bgu" secondAttribute="trailing" id="opD-sZ-2Rr"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkr-NB-A7f" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="123" width="323" height="50"/>
+                                                <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="x6p-gv-EFU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="LOG IN">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginWithSender:" destination="DbA-Ew-C6i" eventType="touchUpInside" id="A48-Gg-vCY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-CP-HGQ">
+                                        <rect key="frame" x="0.0" y="203" width="323" height="36"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                        <state key="normal" title="FORGOT PASSWORD?">
+                                            <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="F7V-xv-5Jk" kind="show" id="QOb-ev-B3C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="hby-Rw-X6j"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="L7f-O2-277" secondAttribute="bottom" id="12R-o3-qIv"/>
+                            <constraint firstItem="L7f-O2-277" firstAttribute="leading" secondItem="whC-CW-bKJ" secondAttribute="leading" id="5lQ-0l-Qg6"/>
+                            <constraint firstItem="2Hp-K5-WEM" firstAttribute="top" secondItem="whC-CW-bKJ" secondAttribute="top" constant="40" id="5wr-jN-I86"/>
+                            <constraint firstItem="9jn-57-qAI" firstAttribute="top" secondItem="FuI-aJ-dJk" secondAttribute="top" id="6GY-s3-JTq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Hp-K5-WEM" secondAttribute="trailing" constant="10" id="Dum-OK-WoM"/>
+                            <constraint firstAttribute="bottom" secondItem="9jn-57-qAI" secondAttribute="bottom" id="GRS-gh-6wc"/>
+                            <constraint firstItem="9jn-57-qAI" firstAttribute="leading" secondItem="whC-CW-bKJ" secondAttribute="leading" id="NSW-Pk-hnZ"/>
+                            <constraint firstItem="whC-CW-bKJ" firstAttribute="trailing" secondItem="L7f-O2-277" secondAttribute="trailing" id="NdT-3Y-H6o"/>
+                            <constraint firstItem="whC-CW-bKJ" firstAttribute="trailing" secondItem="9jn-57-qAI" secondAttribute="trailing" id="aai-f0-Ua5"/>
+                            <constraint firstItem="L7f-O2-277" firstAttribute="top" secondItem="FuI-aJ-dJk" secondAttribute="top" id="e2X-KB-1ex"/>
+                            <constraint firstItem="2Hp-K5-WEM" firstAttribute="leading" secondItem="FuI-aJ-dJk" secondAttribute="leadingMargin" constant="10" id="i3b-Sv-29P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="whC-CW-bKJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Log In" id="Uba-Cz-hva">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="iDU-Gi-dfH">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="xrz-5B-WK4" kind="unwind" unwindAction="unwindtoWelcomeViewWithSegue:" id="fhH-rw-usf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="m8k-2y-DW1" id="KqV-wm-y7Z"/>
+                        <outlet property="passwordTextField" destination="Ttx-xB-VnP" id="1WJ-Xq-tka"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLa-6w-lWi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xrz-5B-WK4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4418.840579710145" y="111.68478260869566"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="vGT-7L-m7P">
+            <objects>
+                <viewController id="sSG-Xu-loP" userLabel="Sign Up View Controller" customClass="SignUpViewController" customModule="Minstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GRx-yu-QL6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="0KW-63-5db" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJr-cd-cS6" userLabel="MaskView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ozq-NU-PcJ">
+                                <rect key="frame" x="26" y="104" width="323" height="228"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yNx-DN-xiA">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="148"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YDj-Fd-8mf">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="35"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IAQ-N3-c7k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="24"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvo-13-Bs8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="nametag"/>
+                                                            </button>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NAME" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="bQP-T0-b6X">
+                                                                <rect key="frame" x="34" y="0.0" width="289" height="24"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZT8-Wh-n1T" userLabel="Divider">
+                                                        <rect key="frame" x="0.0" y="34" width="323" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="L2Y-3z-Wki"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ZT8-Wh-n1T" secondAttribute="trailing" id="jfi-mG-Qfs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IAQ-N3-c7k" secondAttribute="trailing" id="mJP-Lt-299"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-gC-D7k">
+                                                <rect key="frame" x="0.0" y="55" width="323" height="35"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wOf-sY-rA4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="24"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-Pc-cYA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="email"/>
+                                                            </button>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="sbo-rC-xVg">
+                                                                <rect key="frame" x="34" y="0.0" width="289" height="24"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ha9-U5-3uK" userLabel="Divider">
+                                                        <rect key="frame" x="0.0" y="34" width="323" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="e6x-3B-ouX"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Ha9-U5-3uK" secondAttribute="trailing" id="5j2-Ne-YBK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wOf-sY-rA4" secondAttribute="trailing" id="kyg-B3-hFT"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FPp-jl-tN0">
+                                                <rect key="frame" x="0.0" y="110" width="323" height="38"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ZIl-4e-3YD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="323" height="27"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0w-P9-Ip5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="27"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="lock"/>
+                                                            </button>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="9n5-Nq-llN">
+                                                                <rect key="frame" x="34" y="0.0" width="289" height="27"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                        <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLM-HN-e0o" userLabel="Divider">
+                                                        <rect key="frame" x="0.0" y="37" width="323" height="1"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="dgc-k1-FdQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="zLM-HN-e0o" secondAttribute="trailing" id="A1U-Hj-Nuq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZIl-4e-3YD" secondAttribute="trailing" id="J1r-kI-Jcz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ao3-F6-1Bb" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="178" width="323" height="50"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LAZ-T4-k9n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerAccountWithSender:" destination="sSG-Xu-loP" eventType="touchUpInside" id="waL-nC-yEb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="228" id="urT-Fd-abg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NEo-xY-L39" firstAttribute="trailing" secondItem="0KW-63-5db" secondAttribute="trailing" id="Afo-lc-lTP"/>
+                            <constraint firstItem="ozq-NU-PcJ" firstAttribute="leading" secondItem="GRx-yu-QL6" secondAttribute="leadingMargin" constant="10" id="BKt-cu-DYY"/>
+                            <constraint firstAttribute="bottom" secondItem="0KW-63-5db" secondAttribute="bottom" id="F92-PE-c99"/>
+                            <constraint firstItem="nJr-cd-cS6" firstAttribute="top" secondItem="GRx-yu-QL6" secondAttribute="top" id="PhU-MT-8mW"/>
+                            <constraint firstItem="0KW-63-5db" firstAttribute="leading" secondItem="NEo-xY-L39" secondAttribute="leading" id="Pp3-PL-tMg"/>
+                            <constraint firstItem="ozq-NU-PcJ" firstAttribute="top" secondItem="NEo-xY-L39" secondAttribute="top" constant="40" id="hKa-71-iMr"/>
+                            <constraint firstItem="0KW-63-5db" firstAttribute="top" secondItem="GRx-yu-QL6" secondAttribute="top" id="icT-jM-BCg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ozq-NU-PcJ" secondAttribute="trailing" constant="10" id="kEG-da-wCT"/>
+                            <constraint firstAttribute="bottom" secondItem="nJr-cd-cS6" secondAttribute="bottom" id="l3g-F2-YIz"/>
+                            <constraint firstItem="NEo-xY-L39" firstAttribute="trailing" secondItem="nJr-cd-cS6" secondAttribute="trailing" id="n4f-LQ-oeQ"/>
+                            <constraint firstItem="nJr-cd-cS6" firstAttribute="leading" secondItem="NEo-xY-L39" secondAttribute="leading" id="zCD-2u-eJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NEo-xY-L39"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="CDU-Zx-PjT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="b6T-4q-2FS">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="SX4-gd-TSq" kind="unwind" unwindAction="unwindtoWelcomeViewWithSegue:" id="J2g-Xc-tLK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="sbo-rC-xVg" id="HqH-5d-YsC"/>
+                        <outlet property="nameTextField" destination="bQP-T0-b6X" id="4bY-Bg-7VI"/>
+                        <outlet property="passwordTextField" destination="9n5-Nq-llN" id="ln8-Io-a2o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9o-8N-IOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="SX4-gd-TSq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4418.840579710145" y="871.46739130434787"/>
+        </scene>
+        <!--Northern Lights-->
+        <scene sceneID="fAS-kC-fHj">
+            <objects>
+                <tableViewController id="LqV-vF-olZ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jUs-eG-ofQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2058"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="O3v-WN-TGt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="dad-QL-ooe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dad-QL-ooe" id="EKn-Ie-hyM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5s9sei-hfza-vincent-guth" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-gw-qsJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yox-be-9xm">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ejy-4t-BLu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EjN-nC-WYc" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="NhT-Ll-0vc"/>
+                                                                        <constraint firstAttribute="width" constant="75" id="uSa-Ut-JxX"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="240" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="15t-13-T4U">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq7-4S-xqr" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="25" id="2vx-1L-GKd"/>
+                                                                                <constraint firstAttribute="width" constant="25" id="ndp-Gt-oU8"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="vincent-guth"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincent Guth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExL-St-lci">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYD-vs-WSH" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="Udn-61-mZy"/>
+                                                                <constraint firstAttribute="height" constant="30" id="gFO-kO-ErQ"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="HtR-2B-XfF"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Yox-be-9xm" secondAttribute="trailing" id="Wfz-Lx-swA"/>
+                                                <constraint firstItem="Yox-be-9xm" firstAttribute="top" secondItem="PzJ-gw-qsJ" secondAttribute="bottom" constant="15" id="YfO-FN-W76"/>
+                                                <constraint firstItem="Yox-be-9xm" firstAttribute="leading" secondItem="EKn-Ie-hyM" secondAttribute="leadingMargin" id="crD-Tz-1g4"/>
+                                                <constraint firstItem="PzJ-gw-qsJ" firstAttribute="leading" secondItem="EKn-Ie-hyM" secondAttribute="leading" id="fv6-56-W79"/>
+                                                <constraint firstAttribute="trailing" secondItem="PzJ-gw-qsJ" secondAttribute="trailing" id="gT7-6e-jhc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yox-be-9xm" secondAttribute="bottom" constant="4" id="kJs-gp-z83"/>
+                                                <constraint firstItem="PzJ-gw-qsJ" firstAttribute="top" secondItem="EKn-Ie-hyM" secondAttribute="top" id="rnZ-nd-lys"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="dSz-2N-CTP">
+                                        <rect key="frame" x="0.0" y="285" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSz-2N-CTP" id="119-cQ-hU6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="S0m-c4-FgN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="U2V-zc-lx1">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="IUx-xQ-DT9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-Qt-UP9" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="AK2-8k-EF9"/>
+                                                                        <constraint firstAttribute="width" constant="75" id="yRe-9H-OnT"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="459" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-Lw-r7o">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-Ir-MiC" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="25" id="C4h-Jl-tI5"/>
+                                                                                <constraint firstAttribute="width" constant="25" id="Erl-6M-PRU"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="Thomas-Shellberg"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thomas Shellberg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc1-JY-0Vb">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-fv-IWU" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="EFX-IW-JIf"/>
+                                                                <constraint firstAttribute="width" constant="30" id="xMM-G7-Y0t"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="tej-TC-ytv"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="U2V-zc-lx1" firstAttribute="top" secondItem="S0m-c4-FgN" secondAttribute="bottom" constant="15" id="8Ts-5u-T9d"/>
+                                                <constraint firstItem="S0m-c4-FgN" firstAttribute="leading" secondItem="119-cQ-hU6" secondAttribute="leading" id="OE4-Sz-r5b"/>
+                                                <constraint firstAttribute="trailing" secondItem="S0m-c4-FgN" secondAttribute="trailing" id="fFl-TI-CKZ"/>
+                                                <constraint firstItem="S0m-c4-FgN" firstAttribute="top" secondItem="119-cQ-hU6" secondAttribute="top" id="iGS-De-CnU"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="U2V-zc-lx1" secondAttribute="bottom" constant="4" id="o90-YX-Z30"/>
+                                                <constraint firstItem="U2V-zc-lx1" firstAttribute="leading" secondItem="119-cQ-hU6" secondAttribute="leadingMargin" id="wC6-yN-aZI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="U2V-zc-lx1" secondAttribute="trailing" id="wZh-qB-DLv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="avW-ET-foX">
+                                        <rect key="frame" x="0.0" y="570" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="avW-ET-foX" id="4SZ-FW-9qN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bclr95glx6k-vashishtha-jogi" translatesAutoresizingMaskIntoConstraints="NO" id="E45-Qb-Xw4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1kv-9b-svj">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-IP-eTk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-F4-q6z" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="7B0-fd-D0x"/>
+                                                                        <constraint firstAttribute="width" constant="75" id="fPv-YA-IFn"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="240" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-WA-u4S">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ox1-V7-G2R" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="25" id="4ud-y5-BA0"/>
+                                                                                <constraint firstAttribute="width" constant="25" id="eR6-MG-G29"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="Vashishtha-Jogi"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vashishtha Jogi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-7Z-LnG">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yf5-3U-8sN" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="8nv-pL-5gR"/>
+                                                                <constraint firstAttribute="width" constant="30" id="zH6-ME-5dL"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="20z-o1-Won"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="E45-Qb-Xw4" secondAttribute="trailing" id="4uf-9C-gwE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1kv-9b-svj" secondAttribute="trailing" id="72a-iC-NcU"/>
+                                                <constraint firstItem="1kv-9b-svj" firstAttribute="leading" secondItem="4SZ-FW-9qN" secondAttribute="leadingMargin" id="AXW-sY-fIP"/>
+                                                <constraint firstItem="E45-Qb-Xw4" firstAttribute="top" secondItem="4SZ-FW-9qN" secondAttribute="top" id="LVZ-wl-YHl"/>
+                                                <constraint firstItem="1kv-9b-svj" firstAttribute="top" secondItem="E45-Qb-Xw4" secondAttribute="bottom" constant="15" id="Yqy-g2-8Ns"/>
+                                                <constraint firstItem="E45-Qb-Xw4" firstAttribute="leading" secondItem="4SZ-FW-9qN" secondAttribute="leading" id="fao-lV-hx6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1kv-9b-svj" secondAttribute="bottom" constant="4" id="o6G-bA-uXV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="78G-gQ-n6a">
+                                        <rect key="frame" x="0.0" y="855" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="78G-gQ-n6a" id="aho-0o-KCN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nkeh30uoe8o-joshua-earle" translatesAutoresizingMaskIntoConstraints="NO" id="Mfw-kz-bQa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="N3Y-Ko-Rob">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="VBc-43-9A3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNz-22-vIf" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="75" id="Eee-lB-Q7K"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="xOk-mU-Go6"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="727" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-eL-ALn">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKC-uO-db9" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="25" id="Lk3-oL-zTk"/>
+                                                                                <constraint firstAttribute="width" constant="25" id="pyA-Vu-a6g"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="josuha"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joshua Earle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzN-mw-WyO">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZ6-5g-Ix5" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="FA6-bF-TX1"/>
+                                                                <constraint firstAttribute="height" constant="30" id="amK-C1-xWm"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Cee-Wj-FeO"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Mfw-kz-bQa" firstAttribute="leading" secondItem="aho-0o-KCN" secondAttribute="leading" id="GT1-aa-TpC"/>
+                                                <constraint firstItem="Mfw-kz-bQa" firstAttribute="top" secondItem="aho-0o-KCN" secondAttribute="top" id="Sto-wq-oc0"/>
+                                                <constraint firstItem="N3Y-Ko-Rob" firstAttribute="leading" secondItem="aho-0o-KCN" secondAttribute="leadingMargin" id="Vv0-zf-sSP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mfw-kz-bQa" secondAttribute="trailing" id="Xnr-OK-Y6X"/>
+                                                <constraint firstItem="N3Y-Ko-Rob" firstAttribute="top" secondItem="Mfw-kz-bQa" secondAttribute="bottom" constant="15" id="hgu-hr-sD8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="N3Y-Ko-Rob" secondAttribute="bottom" constant="4" id="oyU-r4-nrc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="N3Y-Ko-Rob" secondAttribute="trailing" id="qm6-fC-gDQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="keF-VD-LqX">
+                                        <rect key="frame" x="0.0" y="1140" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="keF-VD-LqX" id="icU-ZY-40I">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="62v7ntlkgl8-vincent-guth" translatesAutoresizingMaskIntoConstraints="NO" id="Rkq-0e-cbh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UUi-UM-pts">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-8L-FAe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te9-qF-emS" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="75" id="g5C-5W-oqo"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="t2f-fA-rax"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="85" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OeZ-fm-gbO">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-B6-6Mh" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="Qjg-LC-Go6"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="wrv-i3-FTn"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="vincent-guth"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincent Guth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKx-IB-s7k">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-Iv-bd6" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="5rF-gU-7rZ"/>
+                                                                <constraint firstAttribute="height" constant="30" id="sqg-VG-nt2"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Pan-21-abR"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="UUi-UM-pts" firstAttribute="top" secondItem="Rkq-0e-cbh" secondAttribute="bottom" constant="15" id="8Yw-pK-hOw"/>
+                                                <constraint firstItem="UUi-UM-pts" firstAttribute="leading" secondItem="icU-ZY-40I" secondAttribute="leadingMargin" id="Akw-zV-fFi"/>
+                                                <constraint firstItem="Rkq-0e-cbh" firstAttribute="top" secondItem="icU-ZY-40I" secondAttribute="top" id="FX4-Ta-h7S"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UUi-UM-pts" secondAttribute="trailing" id="cqM-eN-jlP"/>
+                                                <constraint firstItem="Rkq-0e-cbh" firstAttribute="leading" secondItem="icU-ZY-40I" secondAttribute="leading" id="dfo-fu-m2A"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rkq-0e-cbh" secondAttribute="trailing" id="hn0-Z5-32Z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="UUi-UM-pts" secondAttribute="bottom" constant="4" id="vIX-vz-fZb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="Zf6-3j-aFM">
+                                        <rect key="frame" x="0.0" y="1425" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zf6-3j-aFM" id="yMw-a2-ltW">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t4waa0t3tvs-james-lafa" translatesAutoresizingMaskIntoConstraints="NO" id="nuN-Tb-rlD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="N35-a3-Bu7">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kbh-Qd-CiE">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmC-wQ-nHT" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="4rn-ZN-ysQ"/>
+                                                                        <constraint firstAttribute="width" constant="75" id="Zku-xs-bxJ"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="33" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-S0-SJU">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-tc-Pub" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="e98-w4-Kdh"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="lTQ-sr-LjO"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="james-lafa"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Lafa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTf-8g-STV">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmK-9g-GB5" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="EqO-sN-veU"/>
+                                                                <constraint firstAttribute="width" constant="30" id="iMX-eJ-fdm"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Gpu-nf-VXb"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstItem="nuN-Tb-rlD" firstAttribute="leading" secondItem="yMw-a2-ltW" secondAttribute="leading" id="6hK-n3-UTe"/>
+                                                <constraint firstItem="nuN-Tb-rlD" firstAttribute="top" secondItem="yMw-a2-ltW" secondAttribute="top" id="Bwo-m2-whO"/>
+                                                <constraint firstItem="N35-a3-Bu7" firstAttribute="leading" secondItem="yMw-a2-ltW" secondAttribute="leadingMargin" id="FYr-Dz-Qpl"/>
+                                                <constraint firstItem="N35-a3-Bu7" firstAttribute="top" secondItem="nuN-Tb-rlD" secondAttribute="bottom" constant="15" id="d1i-4L-mL0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="N35-a3-Bu7" secondAttribute="trailing" id="efx-1L-EYa"/>
+                                                <constraint firstAttribute="trailing" secondItem="nuN-Tb-rlD" secondAttribute="trailing" id="fwx-d8-0gr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="N35-a3-Bu7" secondAttribute="bottom" constant="4" id="hYS-hn-dwi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="thz-xW-fdh">
+                                        <rect key="frame" x="0.0" y="1710" width="375" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="thz-xW-fdh" id="dpD-RV-SJ5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zsmgnjyrhrm-nelly-volkovich" translatesAutoresizingMaskIntoConstraints="NO" id="GO2-gW-uZv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="W10-kF-0Rg">
+                                                    <rect key="frame" x="16" y="240" width="343" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nky-Es-1vN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej9-hf-b4W" userLabel="Love" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="30"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="75" id="TKi-Ai-m1p"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="dIr-Bm-ODc"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <state key="normal" title="654" image="heart"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                            <real key="value" value="1"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="5"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="titleLeftPadding">
+                                                                            <real key="value" value="10"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-tF-ssg">
+                                                                    <rect key="frame" x="105" y="0.0" width="178" height="30"/>
+                                                                    <subviews>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-x2-6L3" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="2.5" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="jBo-Pk-4bM"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="r5N-Ck-F5N"/>
+                                                                            </constraints>
+                                                                            <state key="normal" image="user1"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                    <real key="value" value="12.5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </button>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nellyn Volkovich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzW-1Z-dIU">
+                                                                            <rect key="frame" x="35" y="6" width="143" height="18"/>
+                                                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRA-Sl-JmE" userLabel="Download" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                                            <rect key="frame" x="313" y="0.0" width="30" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="N3k-YC-TZe"/>
+                                                                <constraint firstAttribute="width" constant="30" id="bHp-Dx-aLZ"/>
+                                                            </constraints>
+                                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <state key="normal" image="Download"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="yHS-pF-brc"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="GO2-gW-uZv" secondAttribute="trailing" id="K6O-MR-jjI"/>
+                                                <constraint firstItem="GO2-gW-uZv" firstAttribute="leading" secondItem="dpD-RV-SJ5" secondAttribute="leading" id="M28-tk-wpB"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="W10-kF-0Rg" secondAttribute="bottom" constant="4" id="Nnf-uS-KfT"/>
+                                                <constraint firstItem="GO2-gW-uZv" firstAttribute="top" secondItem="dpD-RV-SJ5" secondAttribute="top" id="OF5-PY-qY6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="W10-kF-0Rg" secondAttribute="trailing" id="PB3-Ix-a9t"/>
+                                                <constraint firstItem="W10-kF-0Rg" firstAttribute="leading" secondItem="dpD-RV-SJ5" secondAttribute="leadingMargin" id="bKZ-Xf-hZR"/>
+                                                <constraint firstItem="W10-kF-0Rg" firstAttribute="top" secondItem="GO2-gW-uZv" secondAttribute="bottom" constant="15" id="sgs-zU-drt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LqV-vF-olZ" id="1u3-wn-pCd"/>
+                            <outlet property="delegate" destination="LqV-vF-olZ" id="Php-qf-B96"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Northern Lights" id="Im1-fS-1Ts">
+                        <barButtonItem key="rightBarButtonItem" image="head" id="wYv-yJ-1F0">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ejw-jo-3XU" kind="presentation" id="zIX-y6-ph8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="2058"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VN0-Z8-Dn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3511" y="2238"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="c1t-1n-roB">
+            <objects>
+                <viewController id="F7V-xv-5Jk" customClass="ResetPasswordViewController" customModule="Minstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qni-zf-uXp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="KhK-Le-Hlt" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUr-vC-wJT" userLabel="MaskView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="2XC-IN-agQ">
+                                <rect key="frame" x="26" y="104" width="323" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-wx-lxD">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="35"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8CV-IK-PPE">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="24"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGP-B2-YhT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" image="email"/>
+                                                    </button>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="HzL-Un-hEA">
+                                                        <rect key="frame" x="34" y="0.0" width="289" height="24"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                                <color key="value" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJc-eE-B6u" userLabel="Divider">
+                                                <rect key="frame" x="0.0" y="34" width="323" height="1"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="IK2-of-a2M"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="8CV-IK-PPE" secondAttribute="trailing" id="IWX-eS-ngH"/>
+                                            <constraint firstAttribute="trailing" secondItem="OJc-eE-B6u" secondAttribute="trailing" id="Lqn-UR-Ddh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmp-iJ-lfZ" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="95" width="323" height="50"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="y2F-ig-Tem"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="RESET MY PASSWORD">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resetPasswordWithSender:" destination="F7V-xv-5Jk" eventType="touchUpInside" id="SUg-d6-9xD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="kO8-8W-RU0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tTa-TG-bSc" firstAttribute="trailing" secondItem="KhK-Le-Hlt" secondAttribute="trailing" id="9tj-0D-F9O"/>
+                            <constraint firstItem="2XC-IN-agQ" firstAttribute="top" secondItem="tTa-TG-bSc" secondAttribute="top" constant="40" id="EFd-Ta-Jms"/>
+                            <constraint firstAttribute="bottom" secondItem="KhK-Le-Hlt" secondAttribute="bottom" id="HKA-3j-GJr"/>
+                            <constraint firstItem="KhK-Le-Hlt" firstAttribute="top" secondItem="qni-zf-uXp" secondAttribute="top" id="JL3-IW-yDa"/>
+                            <constraint firstItem="tTa-TG-bSc" firstAttribute="trailing" secondItem="NUr-vC-wJT" secondAttribute="trailing" id="KCx-g7-IXF"/>
+                            <constraint firstItem="2XC-IN-agQ" firstAttribute="leading" secondItem="qni-zf-uXp" secondAttribute="leadingMargin" constant="10" id="LgK-33-Nrc"/>
+                            <constraint firstItem="KhK-Le-Hlt" firstAttribute="leading" secondItem="tTa-TG-bSc" secondAttribute="leading" id="SBh-RE-8SS"/>
+                            <constraint firstItem="NUr-vC-wJT" firstAttribute="top" secondItem="qni-zf-uXp" secondAttribute="top" id="cGT-hc-ebJ"/>
+                            <constraint firstAttribute="bottom" secondItem="NUr-vC-wJT" secondAttribute="bottom" id="chN-e4-pHy"/>
+                            <constraint firstItem="NUr-vC-wJT" firstAttribute="leading" secondItem="tTa-TG-bSc" secondAttribute="leading" id="eGJ-Fg-69a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2XC-IN-agQ" secondAttribute="trailing" constant="10" id="xhB-Gc-hoh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tTa-TG-bSc"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="HzL-Un-hEA" id="Qj0-pH-RLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krz-Jm-6AM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5260.8695652173919" y="111.68478260869566"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="74w-UH-sF2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="egJ-Rz-ft8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="GMv-Lh-Cd9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DbA-Ew-C6i" kind="relationship" relationship="rootViewController" id="ziF-aw-bqc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AM6-Nw-Ken" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3511.594202898551" y="111.68478260869566"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iD7-s3-hgY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ahu-et-QBf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="d6k-cw-sXc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sSG-Xu-loP" kind="relationship" relationship="rootViewController" id="JqH-Xo-ydo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f73-aa-me6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3511.594202898551" y="871.46739130434787"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ags-xx-Xit">
+            <objects>
+                <navigationController storyboardIdentifier="MainView" automaticallyAdjustsScrollViewInsets="NO" id="AGh-Ef-j2s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iex-AH-dLW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LqV-vF-olZ" kind="relationship" relationship="rootViewController" id="5MU-zs-SHe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEu-71-65X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.811594202899" y="1618.2065217391305"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Xqn-g7-Lxu">
+            <objects>
+                <viewController id="EDe-KG-HUV" userLabel="Profile View Controller" customClass="ProfileViewController" customModule="Minstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LlU-3Y-yc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_fjegpi89au-thomas-shellberg" translatesAutoresizingMaskIntoConstraints="NO" id="5RI-Oy-Bd1" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-nU-ycv" userLabel="MaskView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z9i-G0-Dwu">
+                                <rect key="frame" x="67" y="89" width="241" height="314.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-1" translatesAutoresizingMaskIntoConstraints="NO" id="QXY-cc-ma8">
+                                        <rect key="frame" x="0.5" y="0.0" width="240" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="ZUt-lg-O6Y"/>
+                                            <constraint firstAttribute="width" constant="240" id="oej-Ww-4xn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="120"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bessie Lloyd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPl-jM-Qr1">
+                                        <rect key="frame" x="60.5" y="255" width="120" height="24"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="323 photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx3-8e-RGX">
+                                        <rect key="frame" x="76" y="294" width="89.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQg-tF-hlF" customClass="LineButton" customModule="Minstagram" customModuleProvider="target">
+                                <rect key="frame" x="26" y="574" width="323" height="50"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="e62-nc-CjX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutWithSender:" destination="EDe-KG-HUV" eventType="touchUpInside" id="auG-k5-wCs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XQg-tF-hlF" secondAttribute="trailing" constant="10" id="0gq-hK-I0s"/>
+                            <constraint firstItem="5RI-Oy-Bd1" firstAttribute="leading" secondItem="E1D-9D-sgO" secondAttribute="leading" id="Bg7-oJ-7Mr"/>
+                            <constraint firstItem="jEc-nU-ycv" firstAttribute="top" secondItem="LlU-3Y-yc8" secondAttribute="top" id="GxE-Ga-gp0"/>
+                            <constraint firstItem="E1D-9D-sgO" firstAttribute="bottom" secondItem="XQg-tF-hlF" secondAttribute="bottom" constant="43" id="K0S-Yp-Kd3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z9i-G0-Dwu" secondAttribute="trailing" constant="51" id="Ulg-AV-Qnn"/>
+                            <constraint firstItem="E1D-9D-sgO" firstAttribute="trailing" secondItem="jEc-nU-ycv" secondAttribute="trailing" id="Wa2-AW-v6V"/>
+                            <constraint firstItem="jEc-nU-ycv" firstAttribute="leading" secondItem="E1D-9D-sgO" secondAttribute="leading" id="Y39-5z-Ucw"/>
+                            <constraint firstItem="E1D-9D-sgO" firstAttribute="bottom" secondItem="5RI-Oy-Bd1" secondAttribute="bottom" id="ctn-Hn-aQo"/>
+                            <constraint firstItem="5RI-Oy-Bd1" firstAttribute="top" secondItem="LlU-3Y-yc8" secondAttribute="top" id="gSK-QU-3Hb"/>
+                            <constraint firstItem="E1D-9D-sgO" firstAttribute="trailing" secondItem="5RI-Oy-Bd1" secondAttribute="trailing" id="pn9-M1-cmV"/>
+                            <constraint firstItem="Z9i-G0-Dwu" firstAttribute="top" secondItem="E1D-9D-sgO" secondAttribute="top" constant="25" id="sPw-PB-57T"/>
+                            <constraint firstItem="E1D-9D-sgO" firstAttribute="bottom" secondItem="jEc-nU-ycv" secondAttribute="bottom" id="vbh-eP-uSF"/>
+                            <constraint firstItem="Z9i-G0-Dwu" firstAttribute="leading" secondItem="LlU-3Y-yc8" secondAttribute="leadingMargin" constant="51" id="wlY-6g-z8X"/>
+                            <constraint firstItem="XQg-tF-hlF" firstAttribute="leading" secondItem="LlU-3Y-yc8" secondAttribute="leadingMargin" constant="10" id="yRA-Vj-A62"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E1D-9D-sgO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Profile" id="oDE-Aq-DAq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="qBh-JI-llc">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeWithSender:" destination="EDe-KG-HUV" id="nkA-dO-u5P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameLabel" destination="BPl-jM-Qr1" id="eyh-7E-gdk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Df-Wz-DxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5357.6000000000004" y="1617.8410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RU9-3C-USQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ejw-jo-3XU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pDL-kK-62T">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EDe-KG-HUV" kind="relationship" relationship="rootViewController" id="YEN-hZ-iIE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpC-DX-vGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4418" y="1618"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5s9sei-hfza-vincent-guth" width="2048" height="1367"/>
+        <image name="62v7ntlkgl8-vincent-guth" width="2048" height="1367"/>
+        <image name="Download" width="23" height="23"/>
+        <image name="Thomas-Shellberg" width="64" height="64"/>
+        <image name="Vashishtha-Jogi" width="64" height="64"/>
+        <image name="_fjegpi89au-thomas-shellberg" width="3000" height="2002"/>
+        <image name="bclr95glx6k-vashishtha-jogi" width="2048" height="1152"/>
+        <image name="email" width="24" height="16"/>
+        <image name="facebook" width="21.5" height="20"/>
+        <image name="google" width="21" height="21"/>
+        <image name="head" width="25" height="24"/>
+        <image name="heart" width="22" height="18"/>
+        <image name="james-lafa" width="64" height="64"/>
+        <image name="josuha" width="64" height="64"/>
+        <image name="lock" width="20" height="27"/>
+        <image name="minstagram" width="192" height="192"/>
+        <image name="nametag" width="24" height="20"/>
+        <image name="nkeh30uoe8o-joshua-earle" width="2048" height="1365"/>
+        <image name="profile-1" width="1024" height="683"/>
+        <image name="t4waa0t3tvs-james-lafa" width="2048" height="1365"/>
+        <image name="user1" width="100" height="136"/>
+        <image name="vincent-guth" width="64" height="64"/>
+        <image name="zsmgnjyrhrm-nelly-volkovich" width="2048" height="1365"/>
+    </resources>
+</document>
